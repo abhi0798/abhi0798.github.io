@@ -1,89 +1,111 @@
 <html>
-  <head>
-  <title>DETAILS</title>
-  <style>
-  select
-        {
-          width:20%;
-          padding:10px 15px;
-          border:none;
-          background-color: #f1f1f1;
-        }
-  input[type=text]
-        {
-          width:10%;
-          padding:10px 15px;
-          border:none;
-          background-color: #f1f1f1;
-        }
-  input[type=email]
-        {
-          width:20%;
-          padding:10px 15px;
-          border:none;
-          background-color: #f1f1f1;
-        }
-  input[type=tel]
-        {
-          width:20%;
-          padding:10px 15px;
-          border:none;
-          background-color: #f1f1f1;
-        }
-  input[type=number]
-        {
-          width:10%;
-          padding:10px 15px;
-          border:none;
-          background-color: #f1f1f1;
-        }
-   input[type=submit]
-        {
-          width:20%;
-          padding:10px 15px;
-          border:none;
-          font-weight: bold;
-          background-color: #00bfff;
-          text-transform: uppercase;
-        }
-
-    div {
-          border-radius: 5px;
-          border-color: red;
-          padding: 20px;
-        }
-  </style>
-  </head>
-<body align="center">
-  <div>
-    <form method ="post">
-      <h1>Please Enter Your Details</h1>
-      <h3>Fill the application form below and submit</h3>
-      Name* <input type="text" placeholder="first name" name="firstname"><input type="text" placeholder="last name" name="lastname"><br><br>
-      E-mail address* <input type="email" placeholder="abc@gmail.com" name="email"><br><br>
-      Phone Number* <input type="tel" placeholder="phone number" name="phone_number"><br><br>
-      Gender*
-        <select name="gender">
-            <option>select</option>
-            <option value="male">male</option>
-            <option value="female">female</option>
-            <option value="others">others</option>
-        </select><br><br>
-      Citizen*
-        <select name="citizen">
-            <option>select</option>
-            <option value="India">India</option>
-            <option value="America">America</option>
-            <option value="Australia">Australia</option>
-            <option value="France">France</option>
-            <option value="Korea">Korea</option>
-            <option value="Germany">Germany</option>
-        </select><br><br>
-      Date of Birth* <input type="number" placeholder="date" name="date">  <input type="text" placeholder="month" name="month">  <input type="number" placeholder="year" name="year"><br><br>
-      Address*<input type="text" placeholder="street address" name="street address"> <input type="text" placeholder="street address2" name="street address2"><br><br><input type="text" placeholder="landmark" name="landmark"> <input type="text" placeholder="city" name="city"><br><br>
-      <input type="text" placeholder="state/province" name="state"> <input type="number" placeholder="Postal/zip code" name="zip_code"><br><br>
-      <input type="submit">
-    </form>
-  </div>
-</body>
+    <head>
+        <title>Form</title>
+        <style>
+            .a1{
+            padding: 10px 40px;
+            }
+            .a2{
+            padding: 10px 170px;    
+            }
+            .a3{
+            padding: 10px 30px;    
+            }
+            .a4{
+                margin: 0 auto 0 auto; 
+                display: table; 
+                height: 600%;  
+                position: relative; 
+                overflow: hidden; 
+                width: 700px;
+            }
+            input[type=submit]
+            {
+                padding:10px 200px;
+                font-weight: bold;
+                background-color: blue;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            select, input{
+                background-color: lightgray;
+            }
+            #a2{
+                padding: 10px 165px;
+            }
+        </style>
+    </head>
+    <body style="background-color: moccasin">
+        <div align="center" class="a4">
+        <h3><p>Please Enter Your Details</p></h3>
+        <p>Fill the appication form below and submit.</p>
+        <br>
+        <form>
+            <div align="left" style="float: left">
+                Name* <br><br><br>
+                E-mail Address*<br><br><br><br>
+                Phone Number*<br><br><br>
+                Gender*<br><br><br>
+                Citizen*<br><br><br>
+                Date of Birth*<br><br><br>
+                Address*
+            </div>
+            <div align="left" style="float: right">
+            <input type="text" placeholder="First Name" required class="a1">   <input type="text" placeholder="Last Name" required class="a1"><br><br>
+            <input type="email" placeholder="Mail@example.com" id="a2" required><br><br>
+            <input placeholder="Phone number" type="tel" id="a2" required> <br><br>
+            <select class="a2" required>
+                <option>SELECT</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>   
+            </select><br><br>
+            <select class="a2" required>
+                <option>SELECT</option>
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>   
+            </select><br><br>
+            <select class="a3" required>
+                <option>SELECT</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+            </select>
+            <select class="a3" required>
+                <option>SELECT</option>
+                <option value="jan">JAN</option>
+                <option value="feb">feb</option>
+                <option value="mar">mar</option>
+                <option value="apr">apr</option>
+                <option value="may">may</option>
+            </select>
+            <select class="a3" required>
+                <option>SELECT</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+            </select><br><br>
+            <input placeholder="Street Address" type="text" class="a1" required>  <input placeholder="Street Line2" type="text" class="a1"><br><br>
+            <input placeholder="Landmark" type="text" class="a1">  <input placeholder="city" type="text" class="a1" required><br><br>
+            <input placeholder="State/Province" type="text" class="a1" required>  <input placeholder="Postal/Zip code" type="text" class="a1"><br><br>
+            <input type="submit">
+            </div>
+        </form>    
+        </div>
+    </body>
 </html>
